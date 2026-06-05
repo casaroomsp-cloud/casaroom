@@ -109,12 +109,24 @@
     <a class="btn" href="https://instagram.com/khan_wood01">Instagram</a>
     </footer>
     
-    <script>
-    function showGallery(id){
-    document.querySelectorAll('.gallery').forEach(g=>g.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
+   <script>
+function showGallery(id){
+    console.log("Нажата кнопка:", id);
+
+    document.querySelectorAll('.gallery').forEach(g=>{
+        g.classList.remove('active');
+    });
+
+    const gallery = document.getElementById(id);
+
+    if(!gallery){
+        console.error("Не найден блок:", id);
+        return;
     }
-    </script>
+
+    gallery.classList.add('active');
+}
+</script>
     
     </body>
     </html>
