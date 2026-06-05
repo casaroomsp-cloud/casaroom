@@ -1,120 +1,120 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KHANWOOD PREMIUM</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,sans-serif;background:#0b0b0b;color:#fff}
-header{
-height:100vh;
-display:flex;flex-direction:column;justify-content:center;align-items:center;
-text-align:center;
-background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80') center/cover;
-}
-h1{font-size:64px;color:#d4af37}
-.subtitle{font-size:22px;margin:15px 0 30px}
-.btn{display:inline-block;background:#d4af37;color:#000;padding:14px 28px;
-margin:5px;border-radius:8px;text-decoration:none;font-weight:bold}
-section{padding:60px 20px;max-width:1300px;margin:auto}
-h2{color:#d4af37;margin-bottom:25px}
-.categories{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
-.cat-btn{padding:18px;border:none;border-radius:10px;background:#1c1c1c;color:#fff;cursor:pointer}
-.gallery{display:none;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:15px;margin-top:20px}
-.gallery.active{display:grid}
-.gallery img{width:100%;height:300px;object-fit:cover;border-radius:12px}
-footer{text-align:center;padding:50px;background:#000}
-.contact{font-size:20px;line-height:2}
-</style>
-</head>
-<body>
-
-<header>
-<h1>KHANWOOD</h1>
-<div class="subtitle">Премиальная мебель на заказ в Бишкеке</div>
-<div>
-<a class="btn" href="https://wa.me/996990092092" target="_blank">WhatsApp</a>
-<a class="btn" href="https://instagram.com/khan_wood01" target="_blank">Instagram</a>
-</div>
-</header>
-
-<section>
-<h2>Почему выбирают KHANWOOD</h2>
-<ul style="line-height:2;font-size:20px">
-<li>Индивидуальный проект</li>
-<li>Премиальные материалы</li>
-<li>Точные размеры и монтаж</li>
-<li>Современный дизайн</li>
-<li>Гарантия качества</li>
-</ul>
-</section>
-
-<section>
-<h2>Наши направления</h2>
-
-<div class="categories">
-<button class="cat-btn" onclick="showGallery('kitchen')">Кухни на заказ</button>
-<button class="cat-btn" onclick="showGallery('wardrobe')">Гардеробные</button>
-<button class="cat-btn" onclick="showGallery('living')">Гостиные и ТВ-зоны</button>
-<button class="cat-btn" onclick="showGallery('office')">Офисная мебель</button>
-</div>
-
-<div id="kitchen" class="gallery active">
-    <img src="https://i.pinimg.com/736x/35/c7/cb/35c7cb65cbc2bdef550e0a0c9b2973dd.jpg" alt="Кухня">
-    <img src="https://i.pinimg.com/1200x/bc/1d/aa/bc1daa525c750b4c131817ae4850a6bd.jpg" alt="Кухня">
-    <img src="https://i.pinimg.com/1200x/40/c6/17/40c61726f1c133ddc88e01c874af96e6.jpg" alt="Кухня">
-    <img src="https://i.pinimg.com/736x/83/08/51/8308515de7976fcacc2201012e498bc5.jpg" alt="Кухня">
-    <img src="https://i.pinimg.com/1200x/16/29/95/162995a16ec7478934519ba9d0fbc3e0.jpg" alt="Кухня">
-</div>
-
-<div id="wardrobe" class="gallery">
-    <img src="https://i.pinimg.com/736x/22/6f/c0/226fc0d2aea10b7a78f65373e7f81ea3.jpg" alt="Гардеробная">
-    <img src="https://i.pinimg.com/736x/0b/fb/36/0bfb36a6e3b8f7000129716dd2f2ce5a.jpg" alt="Гардеробная">
-    <img src="https://i.pinimg.com/1200x/3c/77/84/3c77841773c4d3480a37eb950b55da4b.jpg" alt="Гардеробная">
-    <img src="https://i.pinimg.com/736x/10/53/cc/1053ccf7a4cb93c0396c973471089944.jpg" alt="Гардеробная">
-</div>
-
-<div id="livingroom" class="gallery">
-    <img src="https://i.pinimg.com/736x/22/6f/c0/226fc0d2aea10b7a78f65373e7f81ea3.jpg" alt="Гостиная">
-    <img src="https://i.pinimg.com/736x/0b/fb/36/0bfb36a6e3b8f7000129716dd2f2ce5a.jpg" alt="Гостиная">
-    <img src="https://i.pinimg.com/1200x/3c/77/84/3c77841773c4d3480a37eb950b55da4b.jpg" alt="Гостиная">
-    <img src="https://i.pinimg.com/736x/10/53/cc/1053ccf7a4cb93c0396c973471089944.jpg" alt="Гостиная">
-</div>
-  
-<div id="office" class="gallery">
-
-<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72" alt="Офисная мебель">
-
-<img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2" alt="Офисная мебель">
-
-<img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7" alt="Офисная мебель">
-
-<img src="https://images.unsplash.com/photo-1497366216548-37526070297c" alt="Офисная мебель">
-
-</div>
-
-</section>
-
-<footer>
-<h2>Свяжитесь с нами</h2>
-<div class="contact">
-📞 +996 990 092 092<br>
-📞 +996 550 977 280<br>
-📸 Instagram: @khan_wood01
-</div>
-<br>
-<a class="btn" href="https://wa.me/996990092092">WhatsApp</a>
-<a class="btn" href="https://instagram.com/khan_wood01">Instagram</a>
-</footer>
-
-<script>
-function showGallery(id){
-document.querySelectorAll('.gallery').forEach(g=>g.classList.remove('active'));
-document.getElementById(id).classList.add('active');
-}
-</script>
-
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHANWOOD PREMIUM</title>
+    <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:Arial,sans-serif;background:#0b0b0b;color:#fff}
+    header{
+    height:100vh;
+    display:flex;flex-direction:column;justify-content:center;align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80') center/cover;
+    }
+    h1{font-size:64px;color:#d4af37}
+    .subtitle{font-size:22px;margin:15px 0 30px}
+    .btn{display:inline-block;background:#d4af37;color:#000;padding:14px 28px;
+    margin:5px;border-radius:8px;text-decoration:none;font-weight:bold}
+    section{padding:60px 20px;max-width:1300px;margin:auto}
+    h2{color:#d4af37;margin-bottom:25px}
+    .categories{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+    .cat-btn{padding:18px;border:none;border-radius:10px;background:#1c1c1c;color:#fff;cursor:pointer}
+    .gallery{display:none;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:15px;margin-top:20px}
+    .gallery.active{display:grid}
+    .gallery img{width:100%;height:300px;object-fit:cover;border-radius:12px}
+    footer{text-align:center;padding:50px;background:#000}
+    .contact{font-size:20px;line-height:2}
+    </style>
+    </head>
+    <body>
+    
+    <header>
+    <h1>KHANWOOD</h1>
+    <div class="subtitle">Премиальная мебель на заказ в Бишкеке</div>
+    <div>
+    <a class="btn" href="https://wa.me/996990092092" target="_blank">WhatsApp</a>
+    <a class="btn" href="https://instagram.com/khan_wood01" target="_blank">Instagram</a>
+    </div>
+    </header>
+    
+    <section>
+    <h2>Почему выбирают KHANWOOD</h2>
+    <ul style="line-height:2;font-size:20px">
+    <li>Индивидуальный проект</li>
+    <li>Премиальные материалы</li>
+    <li>Точные размеры и монтаж</li>
+    <li>Современный дизайн</li>
+    <li>Гарантия качества</li>
+    </ul>
+    </section>
+    
+    <section>
+    <h2>Наши направления</h2>
+    
+   <div class="categories">
+        <button class="cat-btn" onclick="showGallery('kitchen')">Кухни на заказ</button>
+        <button class="cat-btn" onclick="showGallery('wardrobe')">Гардеробные</button>
+        <button class="cat-btn" onclick="showGallery('living')">Гостиные</button>
+        <button class="cat-btn" onclick="showGallery('office')">Офисная мебель</button>
+    </div>
+    
+    <!-- КУХНИ -->
+    <div id="kitchen" class="gallery active">
+        <img src="https://i.pinimg.com/736x/35/c7/cb/35c7cb65cbc2bdef550e0a0c9b2973dd.jpg" alt="Кухня">
+        <img src="https://i.pinimg.com/1200x/bc/1d/aa/bc1daa525c750b4c131817ae4850a6bd.jpg" alt="Кухня">
+        <img src="https://i.pinimg.com/1200x/40/c6/17/40c61726f1c133ddc88e01c874af96e6.jpg" alt="Кухня">
+        <img src="https://i.pinimg.com/736x/83/08/51/8308515de7976fcacc2201012e498bc5.jpg" alt="Кухня">
+        <img src="https://i.pinimg.com/1200x/16/29/95/162995a16ec7478934519ba9d0fbc3e0.jpg" alt="Кухня">
+    </div>
+    
+    <!-- ГАРДЕРОБНЫЕ -->
+    <div id="wardrobe" class="gallery">
+        <img src="https://i.pinimg.com/736x/22/6f/c0/226fc0d2aea10b7a78f65373e7f81ea3.jpg" alt="Гардеробная">
+        <img src="https://i.pinimg.com/736x/0b/fb/36/0bfb36a6e3b8f7000129716dd2f2ce5a.jpg" alt="Гардеробная">
+        <img src="https://i.pinimg.com/1200x/3c/77/84/3c77841773c4d3480a37eb950b55da4b.jpg" alt="Гардеробная">
+        <img src="https://i.pinimg.com/736x/10/53/cc/1053ccf7a4cb93c0396c973471089944.jpg" alt="Гардеробная">
+    </div>
+    
+    <!-- ГОСТИНЫЕ -->
+    <div id="living" class="gallery">
+        <img src="https://i.pinimg.com/736x/22/6f/c0/226fc0d2aea10b7a78f65373e7f81ea3.jpg" alt="Гостиная">
+        <img src="https://i.pinimg.com/736x/0b/fb/36/0bfb36a6e3b8f7000129716dd2f2ce5a.jpg" alt="Гостиная">
+        <img src="https://i.pinimg.com/1200x/3c/77/84/3c77841773c4d3480a37eb950b55da4b.jpg" alt="Гостиная">
+        <img src="https://i.pinimg.com/736x/10/53/cc/1053ccf7a4cb93c0396c973471089944.jpg" alt="Гостиная">
+    </div>
+    
+    <!-- ОФИСНАЯ МЕБЕЛЬ -->
+    <div id="office" class="gallery">
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72" alt="Офисная мебель">
+        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2" alt="Офисная мебель">
+        <img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7" alt="Офисная мебель">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c" alt="Офисная мебель">
+    </div>
+    
+   
+    </section>
+    
+    <footer>
+    <h2>Свяжитесь с нами</h2>
+    <div class="contact">
+    📞 +996 990 092 092<br>
+    📞 +996 550 977 280<br>
+    📸 Instagram: @khan_wood01
+    </div>
+    <br>
+    <a class="btn" href="https://wa.me/996990092092">WhatsApp</a>
+    <a class="btn" href="https://instagram.com/khan_wood01">Instagram</a>
+    </footer>
+    
+    <script>
+    function showGallery(id){
+    document.querySelectorAll('.gallery').forEach(g=>g.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    }
+    </script>
+    
+    </body>
+    </html>
